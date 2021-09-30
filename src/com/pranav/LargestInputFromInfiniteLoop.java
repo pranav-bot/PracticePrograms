@@ -7,16 +7,25 @@ public class LargestInputFromInfiniteLoop {
         Scanner in = new Scanner(System.in);
         int a = 0;
         int b = 0;
-        while((a = in.nextInt())!=0){
-            int d= a;
-            b= d;
-            if(b>a){
-                System.out.println(b);
+        while (true) {
+            a = in.nextInt();
+            if (a == 0) {
+                break;
             }
+            else{
+                b= in.nextInt();
+                if(b>a){
+                    System.out.println(b);}
+                else{
+                        System.out.println(b);
+                    }
+            }
+
         }
 
     }
-
-
 }
+
+
+
 
