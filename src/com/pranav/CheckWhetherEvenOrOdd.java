@@ -6,13 +6,18 @@ public class CheckWhetherEvenOrOdd {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter Number");
         int a = input.nextInt();
-        if(a % 2==0){
-            System.out.println("It is Even");
+        EvenOrOdd(a);
+    }
+    static void EvenOrOdd(int num1){
+        if(num1%2==0){
+            System.out.println("Even");
         }
-        else{
-            System.out.println("It is Odd");
+        else {
+            System.out.println("odd");
+
         }
-	// write your code here
     }
 }
+

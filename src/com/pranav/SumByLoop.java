@@ -7,6 +7,7 @@ public class SumByLoop {
         Scanner in = new Scanner(System.in);
         int a=0;
         int sum = 0;
+        System.out.println("Enter Numbers and Enter 0 to stop");
         while((a = in.nextInt()) != 0) {
             sum = sum +a;
 
